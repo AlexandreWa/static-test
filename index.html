@@ -43,8 +43,44 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .image-fixed-height {
+      height: 500px;
+      object-fit: cover; /* Maintient les proportions de l'image */
+      display: block; /* Rend l'image un bloc, ce qui permet de centrer avec les marges automatiques */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+  color: #007bff; /* Choisissez une couleur qui contraste bien avec le fond */
+  text-decoration: underline; /* Ajoute un soulignement aux liens */
+}
+
+a:hover {
+  color: #0056b3; /* Change la couleur au survol pour indiquer l'interactivité */
+  text-decoration: none; /* Supprime le soulignement au survol si souhaité */
+}
+  </style>
+
+
 </head>
 <body>
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="container has-text-centered"> <!-- Ajout de la classe has-text-centered ici -->
+          <div class="item">
+            <!-- Votre image centrée ici -->
+            <img src="static/images/entete.png" alt="MY ALT TEXT" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <section class="hero">
@@ -52,21 +88,11 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Mate-SHS Condorcet</h1>
+            <h1 class="title is-1 publication-title" style="color:#820e12";>Mate-SHS Condorcet</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Groupe du réseau <a href="https://mate-shs.cnrs.fr/">Mate-SHS</a><br><br><span class="icon"><i class="fas fa-map-pin"></i></span>Campus Condorcet, Aubervilliers</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -127,11 +153,13 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Présentation</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Le groupe local Condorcet s’est constitué dans l’objectif de mettre en relation des ingénieures et ingénieurs, des chercheuses et des chercheurs, des documentalistes s’intéressant, de manière large, à la production, au traitement, à la visualisation et à la préservation de données et de corpus en sciences humaines et sociales.<br><br>
+            Ce groupe a vocation à organiser des rencontres, séminaires ou événements favorisant la synergie et la mutualisation des savoirs et pratiques des résidentes et résidents du <a href ="https://www.campus-condorcet.fr/">Campus Condorcet</a> à Aubervillers (93).<br><br>
+            La réunion de lancement s’est tenue le 12 avril 2021 et début 2022 le groupe s’est mobilisé avec le Réseau Mate-SHS dans l’organisation des Journées annuelles sur le Campus Condorcet intitulées <a href ="https://ja-mate2022.sciencesconf.org/"> Recherche reproductible : regards croisés en SHS.</a><br><br>
+            Aujourd’hui, le groupe propose des sessions d’échanges sur le Campus Condorcet appelées « atelier-garage » et organisées autour d’une thématique axée sur une méthode ou un outil en SHS. Après une présentation succincte par un.e invité.e, experts du domaine et novices viennent nourrir les débats de leurs expériences. Chaque atelier est adossé à une formation pratique courte.          </p>
         </div>
       </div>
     </div>
@@ -139,6 +167,49 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Objectifs  </h2>
+        <div class="content has-text-justified">
+          <ul>
+            <li>Créer du lien, en partageant des expériences</li>
+            <li>Échanger sur les pratiques professionnelles</li>
+            <li>(Se) former et informer</li>
+            <li>Identifier et mutualiser les compétences du Campus Condorcet</li>
+            <li>Faciliter les synergies locales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Organisateurs et organisatrices du groupe</h2>
+        <div class="content has-text-justified">
+          <ul>
+            <li>Emmanuel Collier (Grand Equipement Documentaire GED)</li>
+            <li>Bénédicte Garnier (Ined)</li>
+            <li>Marlène Helias-Baron (CNRS, IRHT)</li>
+            <li>Amélia Laurenceau (Grand Equipement Documentaire GED)</li>
+            <li>Jean Menut (Prodig)</li>
+            <li>Cynthia Pedroja (Grand Equipement Documentaire GED)</li>
+            <li>Muriel Roiland (CNRS, IRHT)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -147,123 +218,45 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/ARCHI93_001.jpg" alt="MY ALT TEXT" class="image-fixed-height"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Photographie de l'Humathèque 1
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/ARCHI93_002.jpg" alt="MY ALT TEXT" class="image-fixed-height"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Photographie de l'Humathèque 2
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/ARCHI93_003.jpg" alt="MY ALT TEXT" class="image-fixed-height"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Photographie de l'Humathèque 3
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/ARCHI93_004.jpg" alt="MY ALT TEXT" class="image-fixed-height"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Photographie de l'Humathèque 4
       </h2>
     </div>
+    <div class="item">
+     <!-- Your image here -->
+     <img src="static/images/ARCHI93_005.jpg" alt="MY ALT TEXT" class="image-fixed-height"/>
+     <h2 class="subtitle has-text-centered">
+       Photographie de l'Humathèque 5
+     </h2>
+   </div>
   </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
 
 
   <footer class="footer">
